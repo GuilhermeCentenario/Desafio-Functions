@@ -15,10 +15,9 @@ generateInvoice(invoice)
 function generateInvoice(invoice){
     console.log(`O comprador é: ${invoice.name}`)
     console.log(`A idade é: ${invoice.age}`)
-}
-
-for(let index in invoice.products){
+    console.log(`-----------------------------------------------------------`)
+    for(let index in invoice.products){
     let [productName, productPrice] = invoice.products[index]
     console.log(`O produto é: ${productName} e custa R$${productPrice}`)
-
+    }
 }
